@@ -1,0 +1,278 @@
+﻿@page
+@{
+    Layout = "_Korisnik";
+    ViewData["Title"]="Profil";
+}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Podešavanja profila</h2>
+          <ol>
+            <li><a href="./ProfilKorisnik">Profil</a></li>
+            <li>Podešavanja profila</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        <p>
+          
+
+          <section class="section profile">
+            <div class="row">
+              <div class="col-xl-4">
+      
+                <div class="card">
+                  <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+      
+                    <img src="assets/img/user-photo.png" alt="Profile" class="rounded-circle">
+                    <h2 id="headerprofimeprez"></h2>
+                    <h3>Korisnik</h3>
+                    <!-- <div class="social-links mt-2">
+                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    </div> -->
+                  </div>
+                </div>
+     
+              </div>
+      
+              <div class="col-xl-8">
+      
+                <div class="card">
+                  <div class="card-body pt-3">
+                    <!-- Bordered Tabs -->
+                    <ul class="nav nav-tabs nav-tabs-bordered">
+      
+                      <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Pregled</button>
+                      </li>
+      
+                      <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Izmeni profil</button>
+                      </li>
+                      <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-change-password">Promeni lozinku</button>
+                      </li>
+                      <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-my-appointment">Moji termini</button>
+                      </li>
+      
+                    </ul>
+                    <div class="tab-content pt-2">
+                      <br>
+                      <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                        <h5 style="font-weight: bold;"class="card-title">Detalji</h5>
+      
+                        <br>
+
+                        <div class="row">
+                          <div style="font-weight: 600;" class="col-lg-3 col-md-4 label ">Puno ime i prezime</div>
+                          <div class="col-lg-9 col-md-8" id="fullnamekor"></div>
+                        </div>
+      
+                        <br> 
+
+                        <div class="row">
+                          <div style="font-weight: 600;" class="col-lg-3 col-md-4 label">Broj telefona</div>
+                          <div class="col-lg-9 col-md-8" id="brtelkor"></div>
+                        </div>
+
+                        <br>
+      
+                        <div class="row">
+                          <div style="font-weight: 600;" class="col-lg-3 col-md-4 label">Adresa</div>
+                          <div class="col-lg-9 col-md-8" id="adresakor"></div>
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                          <div  style="font-weight: 600;" class="col-lg-3 col-md-4 label">Korisnik od</div>
+                          <div class="col-lg-9 col-md-8" id="godinakor"></div>
+                        </div>
+      
+                        <br>
+
+
+                        <div class="row">
+                          <div style="font-weight: 600;" class="col-lg-3 col-md-4 label">Email</div>
+                          <div class="col-lg-9 col-md-8" id="emailkor"></div>
+                        </div>
+
+                        <br>
+      
+                        <div class="row">
+                          <div style="font-weight: 600;" class="col-lg-3 col-md-4 label">Korisničko ime</div>
+                          <div class="col-lg-9 col-md-8" id="korimekor"></div>
+                        </div>
+      
+                        <br>
+
+                        <div class="row">
+                          <div style="font-weight: 600;" class="col-lg-3 col-md-4 label">Datum rođenja</div>
+                          <div class="col-lg-9 col-md-8" id="datrodjkor"></div>
+                        </div>
+
+                      </div>
+      
+                      <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+      
+                          <div class="row mb-3">
+                            <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Ime</label>
+                            <div class="col-md-8 col-lg-9">
+                              <input name="fullName" type="text" class="form-control" id="imeIzmenekor" >
+                            </div>
+                          </div>
+      
+                          <div class="row mb-3">
+                            <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Prezime</label>
+                            <div class="col-md-8 col-lg-9">
+                              <input name="fullName" type="text" class="form-control" id="prezimeIzmenekor" >
+                            </div>
+                          </div>
+
+                          <div class="row mb-3">
+                            <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Broj telefona</label>
+                            <div class="col-md-8 col-lg-9">
+                              <input name="phone" type="text" class="form-control" id="izmenBrTelkor" >
+                            </div>
+                          </div>
+
+                          <div class="row mb-3">
+                            <label for="Address" class="col-md-4 col-lg-3 col-form-label">Adresa</label>
+                            <div class="col-md-8 col-lg-9">
+                              <input name="address" type="text" class="form-control" id="izmenaAdrkor" >
+                            </div>
+                          </div>
+      
+                          <div class="row mb-3">
+                            <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                            <div class="col-md-8 col-lg-9">
+                              <input name="email" type="email" class="form-control" id="izmenaEmailkor" >
+                            </div>
+                          </div>
+      
+                          <div class="row mb-3">
+                            <label for="username" class="col-md-4 col-lg-3 col-form-label">Korisničko ime</label>
+                            <div class="col-md-8 col-lg-9">
+                              <input name="username" type="username" class="form-control" id="korImeIzmenakor" >
+                            </div>
+                          </div>
+
+                          <div class="row mb-3">
+                            <label for="username" class="col-md-4 col-lg-3 col-form-label">Datum rođenja</label>
+                            <div class="col-md-8 col-lg-9">
+                              <input name="username" type="username" class="form-control" id="datRodjIzmenakor" >
+                            </div>
+                          </div>
+
+                          <div class="text-center">
+                            <button type="submit" class="btn btn-primary" id="izmenaKorisnikRadnikProf">Sačuvaj izmene</button>
+                          </div>
+                        </form><!-- End Profile Edit Form -->
+      
+                      </div>
+      
+                      <div class="tab-pane fade pt-3" id="profile-settings">
+      
+                        <!-- Settings Form -->
+                      
+                      </div>
+      
+                      <div class="tab-pane fade pt-3" id="profile-change-password">
+                        <!-- Change Password Form -->
+                        <form onsubmit="return false">
+      
+                          <div class="row mb-3">
+                            <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Trenutna lozinka</label>
+                            <div class="col-md-8 col-lg-9">
+                              <input name="password" type="password" class="form-control" id="currentPasswordkor">
+                            </div>
+                          </div>
+      
+                          <div class="row mb-3">
+                            <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">Nova lozinka</label>
+                            <div class="col-md-8 col-lg-9">
+                              <input name="newpassword" type="password" class="form-control" id="newPasswordkor">
+                            </div>
+                          </div>
+      
+                          <div class="row mb-3">
+                            <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Ponovo unesite lozinku</label>
+                            <div class="col-md-8 col-lg-9">
+                              <input name="renewpassword" type="password" class="form-control" id="renewPasswordkor">
+                            </div>
+                          </div>
+      
+                          <div class="text-center">
+                            <button type="submit" class="btn btn-primary" id="promeni-lozinku-btnkor">Promeni lozinku</button>
+                          </div>
+                        </form><!-- End Change Password Form -->
+      
+                      </div>
+
+                      <div class="tab-pane fade pt-3" id="profile-change-password">
+      
+                        <!-- Settings Form -->
+                      
+                      </div>
+
+                      <div class="tab-pane fade pt-3" id="profile-my-appointment">
+                        <!-- Change Password Form -->
+                        <h5 class="card-title" id="termini5h">Termini </h5>
+              
+                            
+      
+                      </div>
+
+                      
+      
+                    </div><!-- End Bordered Tabs -->
+      
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+          </section>
+
+
+        </p>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+<div id="myModaltg" class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel">Otkaži termin</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalBodytg">
+
+          <div>Da li ste sigurni da želite da otkažete termin?</div>
+
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary btn-lista-zakazivanja" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" id="btnPotvrdi">Potvrdi</button>
+          <button class="btn btn-secondary btn-lista-zakazivanja" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" id="btnOdustani" data-dismiss="modal">Odustani</button>
+        </div>
+      </div>
+    </div>
+  </div>
+@section Scripts{
+    <!-- Nase skripte-->
+    <script src="assets/js/profil-podesavanja.js" type="module"></script>
+}

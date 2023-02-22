@@ -1,0 +1,149 @@
+﻿@page
+@model Pages.VlasnikAuth
+@{
+    Layout = "_LayoutVlasnik";
+    ViewData["Title"]="Beauty Code";
+}
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Salon</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./Vlasnik">Početna</a></li>
+          <li class="breadcrumb-item">Početna</li>
+          <li class="breadcrumb-item active">Salon</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section contact">
+
+      <div class="row gy-4">
+
+        <div class="col-xl-6">
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="info-box card">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Adresa</h3>
+                <p id="adresasalona"> </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-box card">
+                <i class="bi bi-telephone"></i>
+                <h3>Telefon</h3>
+                <p>+381 / 69 876 - 123 </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-box card">
+                <i class="bi bi-envelope"></i>
+                <h3>E-mail</h3>
+                <p>info@beautycode.com<br></p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-box card">
+                <i class="bi bi-clock"></i>
+                <h3>Radno vreme</h3>
+                <p>Ponedeljak - Subota<br>10:00h - 22:00h</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-xl-6">
+          <div class="card p-4">
+            <ul class="nav nav-tabs nav-tabs-bordered">
+
+              <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Pregled salona</button>
+              </li>
+
+              <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Izmeni salon</button>
+              </li>
+  
+            </ul>
+            <div class="tab-content pt-2">
+
+              <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                <h5 class="card-title">Detalji o salonu</h5>
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 label">Salon:</div>
+                  <div class="col-lg-9 col-md-8" id="salonimepc"></div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 label">Adresa:</div>
+                  <div class="col-lg-9 col-md-8" id="salonadresapc"></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 label">PIB:</div>
+                  <div class="col-lg-9 col-md-8" id="salonpibpc"></div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 label">Godina osnivanja:</div>
+                  <div class="col-lg-9 col-md-8" id="godosnivanjapc"></div>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+
+                <!-- Profile Edit Form -->
+                <form onsubmit="return false">
+                  
+
+                  <div class="row mb-3">
+                    <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Ime salona</label>
+                    <div class="col-md-8 col-lg-9" id="salonimeizmenapc">
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="row mb-3">
+                    <label for="Address" class="col-md-4 col-lg-3 col-form-label">Adresa</label>
+                    <div class="col-md-8 col-lg-9" id="salonadresaizmenapc">
+                      
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label for="Phone" class="col-md-4 col-lg-3 col-form-label">PIB</label>
+                    <div class="col-md-8 col-lg-9" id="salonpibizmenapc">
+                      
+                    </div>
+                  </div>
+
+                  <div class="row mb-3">
+                    <label for="Email" class="col-md-4 col-lg-3 col-form-label">Godina osnivanja</label>
+                    <div class="col-md-8 col-lg-9" id="salongodinaizmenapc">
+                      
+                    </div>
+                  </div>
+                  <div class="text-center" >
+                    <button type="submit" class="btn btn-primary" id="btnsalchange">Sačuvaj izmene</button>
+                  </div>
+                </form><!-- End Profile Edit Form -->
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+@section Scripts{
+    <!-- Nase skripte-->
+    <script src="assetsvlasnik/js/pages-contact.js" type="module"></script>
+}

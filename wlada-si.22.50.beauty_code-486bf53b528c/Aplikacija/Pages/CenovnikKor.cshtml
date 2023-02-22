@@ -1,0 +1,134 @@
+﻿@page
+@model Pages.KorisnikAuth
+@{
+    Layout = "_LayoutCenovnik";
+}
+@section NavCenovnik{
+    <li class="dropdown"><a href="#"><span> Vaš profil</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <!-- PAZNJAAA !!!! --> <!-- PAZNJAAA !!!! --> <!-- PAZNJAAA !!!! -->
+                  <li><a href="./ProfilKorisnik"> <i style="font-size: large; font-weight: 900;" class="bi bi-gear"></i>Izmeni profil</a></li>  
+                  <li><a href="./OstaviKomentar"> <i style="font-size: large; font-weight: 900;" class="bi bi-chat-left-dots"></i></i>Ostavi komentar</a></li>  
+                  <li><a href="#" id="odjava"> <i style="font-size: large; font-weight: 900;" class="bi bi-box-arrow-right"></i> Odjavi se  </a></li>
+              
+            </ul>
+
+          </li>
+}
+
+  <main id="main">
+
+    <!-- ======== SECTION MENU ========= -->
+          
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>MENU</h2>
+          <p>Bacite pogled na cenovnik</p>
+        </div>
+
+        <br><br>
+        <div class="col-md-4">
+          <label for="inputTip" class="form-label" style="font-weight:550; font-size:larger">  Izaberite tip usluge: </label>
+          <select id="inputTip" class="form-select tipUslugeSelekt">
+            <!-- <option selected>Izaberi...</option> -->
+            <option selected value="0">Tip usluge</option>
+            <option value="Frizerska">Frizerske</option>
+            <option value="Kozmeticka">Kozmetičke</option>
+            <option value="Masaza">Masaže</option>             
+          </select>
+        </div>
+        <br><br>
+        <div class="usluge-container" id="usluga">
+
+          <!-- POZIVA SE F-JA IZ CENOVNIK.JS-->
+
+          
+        </div>
+        <br><br>
+        <div class="col-lg-3 cta-btn-container ">
+          <a style="font-size: medium; font-weight: bolder; font-size: larger" class="cta-btn align-middle" href="./Korisnik">◄ NAZAD na početnu stranu</a>
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+      <!-- ======= Cta Section ======= -->
+
+      <!-- End Cta Section -->
+     <!-- ======= Team Section ======= -->
+     <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>TIM</h2>
+          <p>Naš vredan tim</p>
+        </div>
+
+        <div class="row" id="radniciCenovikStrana">
+        </div>
+        <!-- JS FAJL NEKI -->
+
+      </div>
+    </section><!-- End Team Section -->
+    <!-- ======= Clients Section ======= -->
+    <section id="sponsors" class="sponsors">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>SPONZORI</h2>
+          <p>Naši sponzori</p>
+        </div>
+
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/sponzori/sponzor1.jfif" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/sponzori/sponzor2.jfif" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/sponzori/sponzor3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/sponzori/sponzor4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/sponzori/sponzor5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/sponzori/spozor6.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+        <!-- NAPOMENAAAAAAAAAAAAA: 
+                  OVAJ FOOTER TREBA DA SE PRIKAZE TEK KAD SE SELEKTUJE CHECK BOX !!!!!! -->
+
+        <div class="footer">
+          <p>  <button class="btn-termin btn default" style="font-family: Open Sans, sans-serif;" type="button" id="PrelazSaCenovnikaNaZakazivanje"> Izaberite usluge i termin </button> </a>  </p>
+        </div>
+
+    </section><!-- End Clients Section -->
+      
+    <div style="justify-content: flex-start;" class="col-lg-3 cta-btn-container">
+      <a style="font-weight: bolder; font-size: larger;" class="cta-btn align-middle" href="./Korisnik">◄ NAZAD na početnu stranu</a>
+  </div>
+
+
+  </main>
+
+@section Scripts{
+        <!-- Template Main JS File -->
+    <script src="assets/js/cenovnik-korisnik.js" type="module"></script>
+}

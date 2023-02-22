@@ -1,0 +1,45 @@
+﻿@page
+@model Pages.KorisnikAuth
+@{
+    Layout="_Sminka";
+}
+@section Heder{
+    <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1><a href="./Korisnik">BeautyCode</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="./Korisnik#hero">Početna</a></li>
+          <li><a class="nav-link scrollto" href="./Korisnik#about">O nama</a></li>
+          <li><a class="nav-link scrollto" href="./Korisnik#services">Usluge</a></li>
+          <li><a class="nav-link scrollto " href="./Korisnik#portfolio">Galerija</a></li>
+          <li><a class="nav-link scrollto" href="./Korisnik#pricing">Cenovnik</a></li>
+          <li><a class="nav-link scrollto" href="./Korisnik#team">Tim</a></li>
+
+          <li class="dropdown"><a href="#"><span>Vaš profil</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              
+              <!-- PAZNJAAA !!!! --> <!-- PAZNJAAA !!!! --> <!-- PAZNJAAA !!!! -->
+                  <li><a href="./ProfilKorisnik"> <i style="font-size: large; font-weight: 900;" class="bi bi-gear"></i>Izmeni profil</a></li>  
+                  <li><a href="./OstaviKomentar"> <i style="font-size: large; font-weight: 900;" class="bi bi-chat-left-dots"></i></i>Ostavi komentar</a></li> 
+                  <li><a href="#" id="odjava"> <i style="font-size: large; font-weight: 900;" class="bi bi-box-arrow-right"></i> Odjavi se  </a></li> 
+    
+            </ul>
+
+          </li>
+          
+          <li><a class="nav-link scrollto" href="#contact">Kontakt</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+}

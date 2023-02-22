@@ -1,0 +1,73 @@
+﻿@page
+@model Pages.VlasnikAuth
+@{
+    Layout = "_LayoutVlasnik";
+    ViewData["Title"]="Dodaj proizvod";
+}
+<main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Prikaz za dodavanje proizvoda</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./Index">Početna</a></li>
+          <li class="breadcrumb-item">Prikaz</li>
+          <li class="breadcrumb-item active">Dodaj proizvod</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+    
+    
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-6">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dodaj proizvod</h5>
+
+              <!-- Multi Columns Form -->
+              <form class="row g-3" onsubmit="return false">
+                
+                <div class="col-md-12">
+                  <label for="inputImeProizvoda" class="form-label">Ime proizvoda</label>
+                  <input type="text" type="submit" class="form-control" id="inputImeProizvodafl3" placeholder="Gliss hair repair" required minlength="3" maxlength="50"/>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="inputKolicina" class="form-label">Količina</label>
+                  <input type="number" class="form-control" id="inputKolicinafl3" placeholder="5" required min="1" />
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success" id="dodajProizvod" >Dodaj nov proizvod</button>
+                  <!-- <input type="submit"> -->
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+
+                <!-- onclick="functionNeka();" -->
+                
+
+              </form><!-- End Multi Columns Form -->
+
+            </div>
+          </div>
+
+        </div>
+
+        
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+@section Scripts{
+    <!-- Nase skripte-->
+    <script src="assetsvlasnik/js/forms-layout3.js" type="module"></script>
+}

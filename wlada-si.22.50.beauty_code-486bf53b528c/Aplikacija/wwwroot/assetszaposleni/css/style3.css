@@ -1,0 +1,10 @@
+.body-div{
+
+    display: flex;
+    flex-direction: row;
+}
+
+::selection{
+    background: #fa4299;
+    color: #fff;
+  }

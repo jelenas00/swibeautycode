@@ -1,0 +1,38 @@
+﻿@page
+@{
+    Layout = "_LayoutLogin";
+    ViewData["Title"]="Login";
+}
+<div class="wrapper">
+         <div class="title-text">
+            <div class="title login">
+               Log in Forma
+            </div>
+            <div class="title signup">
+               Sign up Forma
+            </div>
+         </div>
+         <div class="form-container">
+           
+            <div class="form-inner">
+               <form  id="login" onsubmit="return false">
+                  <div class="field">
+                     <input type="text" placeholder="Korisničko ime" id="korisnickoImeZaposleni" required/>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" id="passwordZaposleni" required/>
+                  </div>
+                  <div class="pass-link">
+                     <a href="#" id="ZaboraviliSteLozinkuZaposleni" >Zaboravili ste lozinku?</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Log in" id="PrijavaZaposleni">
+                  </div>
+      
+            </div>
+         </div>
+      </div>
+@section Scripts{
+      <script src="assetszaposleni/js/login.js" type="module"></script>
+}

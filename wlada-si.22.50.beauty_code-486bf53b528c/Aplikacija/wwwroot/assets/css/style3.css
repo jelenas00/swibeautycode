@@ -1,0 +1,53 @@
+/* ZVEZDICE - RATING */ 
+
+
+.rating {
+  
+    
+    background-color: rgb(253, 240, 255);
+    border: 2px solid rgb(131, 131, 131);
+    padding: 20px;
+    border-radius: 15px;
+
+    /* color: #ffe400; */
+    font-size: 20px;
+    /* text-align: center; */
+}
+
+.rating input {
+    display: none;
+    color: #ffe400;
+}
+
+.rating input + label {
+    color: #ffe400;
+    font-size: 50px;
+    text-shadow: 1px 1px 0 #494201;
+    cursor: pointer;
+}
+
+/* #zvezdica1 #zvezdica2 #zvezdica3 #zvezdica4 #zvezdica5 :hover {
+    background-color: #bab15c;
+} */
+
+.rating input:checked + label ~ label {
+    color: #aeaeae;
+}
+
+.rating label:active {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+
+
+
+
+#postavi-komentar-btn {
+    background-color: #f141cb;
+}
+
+#postavi-komentar-btn:hover {
+    background-color: #cf39ae;
+    border-color: #8e025b;
+}

@@ -1,0 +1,96 @@
+﻿@page
+@model Pages.KorisnikAuth
+@{
+    Layout = "_Korisnik";
+    ViewData["Title"]="Profil";
+}
+@section Styles{
+    <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS Files -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style3.css" rel="stylesheet">
+}
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Ostavite komentar</h2>
+          <ol>
+            <li><a href="./ProfilKorisnik"> Profil</a></li>
+            <li>Komentari</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container">
+        <p>
+        
+
+          <div class="rating"> <span class="ocena-label"> Ocena:</span> 
+            <div class="star-icon"> 
+              <input type="radio" name="zvezdica" id="zvezdica1" value="1">
+              <label for="zvezdica1" class="bi bi-star-fill">  </label>
+              <input type="radio" name="zvezdica" id="zvezdica2" value="2">
+              <label for="zvezdica2" class="bi bi-star-fill">  </label>
+              <input type="radio" name="zvezdica" id="zvezdica3" value="3">
+              <label for="zvezdica3" class="bi bi-star-fill">  </label>
+              <input type="radio" name="zvezdica" id="zvezdica4" value="4">
+              <label for="zvezdica4" class="bi bi-star-fill">  </label>
+              <input type="radio" name="zvezdica" id="zvezdica5" value="5">
+              <label for="zvezdica5" class="bi bi-star-fill" >  </label>
+            </div>
+            
+            <br> 
+            
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Prenesite nam Vaše utiske:</label>
+              <textarea class="form-control" id="tekstKomentara" placeholder="Vaš komentar" rows="3"></textarea>
+            </div>
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary" id="postavi-komentar-btn">Postavi komentar</button>
+            </div>
+
+          </div>
+
+
+
+
+        </p>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+@section Scripts{
+    <!-- Nase skripte-->
+    <script src="assets/js/komentari.js" type="module"></script>
+    <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+}

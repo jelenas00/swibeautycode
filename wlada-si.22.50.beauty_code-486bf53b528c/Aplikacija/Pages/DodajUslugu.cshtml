@@ -1,0 +1,94 @@
+﻿@page
+@model Pages.VlasnikAuth
+@{
+    Layout = "_LayoutVlasnik";
+    ViewData["Title"]="Dodaj uslugu";
+}
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Dodavanje usluge</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./Vlasnik">Početna</a></li>
+          <li class="breadcrumb-item">Dodaj u salon</li>
+          <li class="breadcrumb-item active">Dodavanje usluge</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+    
+    
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-6">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dodaj uslugu</h5>
+
+              <!-- Multi Columns Form -->
+              <form class="row g-3" onsubmit="return false">
+                <div class="col-md-6">
+                  <label for="inputName5" class="form-label">Naziv</label>
+                  <input type="text" class="form-control" id="inputImeUslugefl2" placeholder="Naziv usluge" required/>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputTip" class="form-label">Tip usluge</label>
+                  <select id="inputTip" class="form-select tipUslugeSelekt">
+                    <!-- <option selected>Izaberi...</option> -->
+                    <option selected value="0">Tip usluge</option>
+                    <option value="Frizerska">Frizerske</option>
+                    <option value="Kozmeticka">Kozmetičke</option>
+                    <option value="Masaza">Masaže</option>             
+                  </select>
+                </div>
+                <div class="row mb-4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCena" class="form-label">Cena</label>
+                  <input type="number" class="form-control" id="inputCenafl2" placeholder="RSD:   0" min="0" required/>
+                </div>
+
+
+                <div class="col-md-4">
+                  <label for="inputTrajanje" class="form-label">Trajanje usluge</label>
+                  <select id="inputTrajanje" class="form-select vremeUslugeSelekt">
+                    <!-- <option selected>Izaberi...</option> -->
+                    <option selected value="15">15m</option>
+                    <option value="30">30m</option>
+                    <option value="45">45m</option>
+                    <option value="60">1h</option>
+                    <option value="75">1h:15m</option>
+                    <option value="90">1h:30m</option>
+                    <option value="105">1h:45m</option>
+                    <option value="120">2h</option>                    
+                  </select>
+                </div>
+
+                <div class="row mb-4">
+                </div>
+                
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success" id="dodaj">Dodaj</button>
+                  <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+
+                
+              </form><!-- End Multi Columns Form -->
+
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+@section Scripts{
+    <!-- Nase skripte-->
+    <script src="assetsvlasnik/js/forms-layout2.js" type="module"></script>
+}

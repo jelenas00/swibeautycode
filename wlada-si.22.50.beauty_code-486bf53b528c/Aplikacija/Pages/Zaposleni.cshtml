@@ -1,0 +1,105 @@
+﻿@page
+@model Pages.RadnikAuth
+@{
+    Layout = "_LayoutZaposleni";
+    ViewData["Title"]="Zaposleni";
+}
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Početna</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./Zaposleni">Početna</a></li>
+          <li class="breadcrumb-item active">Početna</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+
+        <section class="section">
+          <div class="row">
+            <div class="col-lg-12">
+    
+              <div class="card">
+                <div class="card-body2">
+                  <h5 class="card-title2">Beauty Code</h5>
+                  
+                 
+    
+                  <div class="card">
+                    <div class="card-bodyX">
+                      <br>
+                      <img style="height: 150px;" src="assetszaposleni/img/logoSalon.png"  alt="">
+                      <!-- <h5 class="card-title">Example Card</h5> -->
+                      <!-- <p>This is an examle page with no contrnt. You can use it as a starter for your custom pages.</p> -->
+                      
+                      <div class="ime-prezime" >
+                        <div id="ImeIPrezimeZaposleniGlavna">
+                        </div>
+                       
+                        <!--  (zaposlenog) -->
+                        
+                        <div class="tip-radnika" id="glavniTipradnika">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Left side columns -->
+        <div class="col-lg-12">
+          <div class="row">
+
+            <!-- Top Selling -->
+            <div class="col-12">
+              <div class="card top-selling overflow-auto">
+
+                <div class="card-body pb-0">
+                  <h5 class="card-title">Zakazivanja <span></span></h5>
+
+
+                  <div class="mx-auto" style="margin-top: 10px; margin-bottom: 30px;"> 
+                    <h1 class="text-center mb-3 text-secondary">Kalendar</h1>
+
+
+                    <form class="text-center" class="box">
+                      <input class="form-control col-6" type="date" id="datZakaz" placeholder="Izaberi datum i vreme" min="2022-01-01" max="2025-01-01" required/>
+                      <br>
+                      <button type="button" class="btn btn-secondary btn-lista-zakazivanja" style="text-align: center" id="dugZakaz"> Prikaži sva zakazivanja</button>
+                      
+                      <br>
+                      <br>
+                      
+                      <div id="mestoZaTabeluTermina" class="card lista-zakazivanja" >
+                        <div class="card-body">
+                          <!--<h5 class="card-title">Example Card</h5>
+                          <p>This is an examle page with no content. You can use it as a starter for your custom pages.</p>-->
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+
+                        <div class="card">
+                          <div class="card-body" id="divZaTermin">
+                            
+                          </div>
+                        </div>
+        </div><!-- End Right side columns -->
+      </div>
+    </section>
+  </main><!-- End #main -->
+
+@section Scripts{
+    <!-- Nase skripte-->
+    <script src="assetszaposleni/js/zaposleni.js" type="module"></script>
+    <script src="assetszaposleni/js/zakazivanja.js" type="module"></script>
+}
